@@ -14,7 +14,7 @@ Classification moléculaire du cancer du sein par apprentissage automatique — 
 
 ## Présentation
 
-Le cancer du sein regroupe **4 sous-types moléculaires biologiquement distincts**, dont le traitement dépend directement du profil génomique de la tumeur — pas seulement de sa localisation.
+Le cancer du sein regroupe **4 sous-types moléculaires biologiquement distincts**, dont le traitement dépend directement du profil génomique de la tumeur, pas seulement de sa localisation.
 
 OncoPrint exploite les données multi-omiques du dataset public **TCGA-BRCA** (536 patientes, 1936 variables) pour prédire automatiquement ce sous-type à partir du profil génomique d'une patiente, avec interprétabilité des biomarqueurs et estimation du pronostic de survie.
 
@@ -31,7 +31,7 @@ OncoPrint exploite les données multi-omiques du dataset public **TCGA-BRCA** (5
 
 | Lien | Description |
 |---|---|
-| [Dashboard Streamlit](https://huggingface.co/spaces/marinedde/oncoprint-dashboard) | Interface complète — aide à la décision, exploration, survie |
+| [Dashboard Streamlit](https://huggingface.co/spaces/marinedde/oncoprint-dashboard) | Interface complète, aide à la décision, exploration, survie |
 | [API FastAPI](https://huggingface.co/spaces/marinedde/oncoprint-api) | API REST — `/predict`, `/survival`, `/health` |
 | [Documentation API](https://marinedde-oncoprint-api.hf.space/docs) | Swagger auto-généré |
 
@@ -101,7 +101,7 @@ OncoPrint exploite les données multi-omiques du dataset public **TCGA-BRCA** (5
 
 ## Module de survie
 
-Estimations issues de la cohorte TCGA-BRCA — à titre de recherche uniquement.
+Estimations issues de la cohorte TCGA-BRCA, à titre de recherche uniquement.
 
 | Sous-type | Médiane OS | Hazard Ratio |
 |---|---|---|
@@ -149,8 +149,8 @@ FastAPI (Docker) + Streamlit + Claude AI — déployé sur HuggingFace Spaces
 
 ## Dataset
 
-**The Cancer Genome Atlas — Breast Cancer (TCGA-BRCA)**
-- Source : [NCI/NIH](https://www.cancer.gov/tcga) — données publiques de recherche
+**The Cancer Genome Atlas, Breast Cancer (TCGA-BRCA)**
+- Source : [NCI/NIH](https://www.cancer.gov/tcga), données publiques de recherche
 - 705 patientes initiales → 536 après nettoyage
 - 1936 features multi-omiques : 249 mutations, 860 CNV, 604 RNA-seq, 223 phospho-protéines
 - Variable cible construite depuis les valeurs ER/PR/HER2 par règles cliniques standard
@@ -214,21 +214,21 @@ POST /predict
 
 ## Limites
 
-- Données TCGA en conditions recherche — pas de validation clinique externe
-- Luminal B recall 42% — hétérogénéité biologique inhérente à ce sous-type
-- HER2-enriched n=5 dans le test — statistiquement fragile
-- Interface démo : 9 features sur 1936 — simplification pédagogique
+- Données TCGA en conditions recherche, pas de validation clinique externe
+- Luminal B recall 42%, hétérogénéité biologique inhérente à ce sous-type
+- HER2-enriched n=5 dans le test, statistiquement fragile
+- Interface démo : 9 features sur 1936, simplification pédagogique
 - HuggingFace gratuit : mise en veille après inactivité
 
-**Pour aller plus loin :** plus de données (cohortes multi-centres), ajouter Ki67 et le stade, validation sur cohorte externe — objectif 90%+.
+**Pour aller plus loin :** plus de données (cohortes multi-centres), ajouter Ki67 et le stade, validation sur cohorte externe => objectif 90%+.
 
 ---
 
 ## Auteure
 
 **Marine Deldicque**
-Infirmière IDEL & Data Scientist — CDSD Jedha 2026
+Infirmière libérale & Data Scientist - CDSD Jedha 2026
 
-Projet de certification — Certification Data Scientist & Data Analyst, Jedha Bootcamp
+Certification Data Scientist, Jedha Bootcamp
 
 > *Ce projet est un outil de recherche et d'aide à la décision. Il ne remplace pas le diagnostic clinique (anatomopathologie, IHC, FISH) ni l'avis d'un professionnel de santé.*
