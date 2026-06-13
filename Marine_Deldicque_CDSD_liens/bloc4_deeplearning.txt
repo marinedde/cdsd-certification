@@ -1,0 +1,7 @@
+BLOC 4 — Analyse prédictive de données non structurées (Deep Learning)
+Projet : AT&T Spam Detector
+
+GitHub : https://github.com/marinedde/cdsd-certification/tree/main/bloc4-deep-learning
+
+Données :
+- SMS Spam Collection (UCI) : https://archive.ics.uci.edu/ml/datasets/sms+spam+collection

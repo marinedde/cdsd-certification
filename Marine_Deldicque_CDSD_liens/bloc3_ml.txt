@@ -1,0 +1,9 @@
+BLOC 3 — Analyse prédictive de données structurées (Machine Learning)
+Projets : Walmart Sales + Conversion Rate + North Face
+
+GitHub : https://github.com/marinedde/cdsd-certification/tree/main/bloc3-machine-learning
+
+Données :
+- Walmart Sales : https://full-stack-assets.s3.eu-west-3.amazonaws.com/Deployment/walmart_sales.csv
+- Conversion Rate : https://full-stack-assets.s3.eu-west-3.amazonaws.com/Deployment/conversion_rate.csv
+- North Face : https://full-stack-assets.s3.eu-west-3.amazonaws.com/Deployment/northface.csv

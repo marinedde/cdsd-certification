@@ -1,0 +1,13 @@
+BLOC 2 — Analyse exploratoire, descriptive et inférentielle de données
+Projets : Speed Dating (Tinder) + Steam
+
+GitHub : https://github.com/marinedde/cdsd-certification/tree/main/bloc2-analyse-exploratoire
+
+Données :
+- Speed Dating : https://full-stack-assets.s3.eu-west-3.amazonaws.com/Deployment/speed_dating.csv
+- Steam : https://full-stack-assets.s3.eu-west-3.amazonaws.com/Deployment/steam.csv
+
+Databricks (Steam — notebook publié, obligatoire jury) :
+- URL à compléter après bouton Publish dans Databricks :
+  https://VOTRE-WORKSPACE.cloud.databricks.com/#notebook/ID_PUBLIE
+- Guide : notebooks/Project_Steam (1).ipynb → Publish → copier l’URL publique ici

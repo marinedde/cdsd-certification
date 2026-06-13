@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Environnement virtuel
+.venv/
+
+# Anciennes versions des présentations
+pptx ancien/
+
+# Archives en doublon
+*.zip

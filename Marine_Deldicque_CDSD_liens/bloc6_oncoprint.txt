@@ -1,0 +1,10 @@
+BLOC 6 — Direction de projets de gestion de données
+Projet : OncoPrint
+
+GitHub : https://github.com/marinedde/cdsd-certification/tree/main/bloc6-direction-projet
+
+Dashboard Streamlit : https://huggingface.co/spaces/marinedde/oncoprint-dashboard
+API FastAPI : https://huggingface.co/spaces/marinedde/oncoprint-api
+
+Données :
+- TCGA BRCA Multi-Omics (Kaggle) : https://www.kaggle.com/datasets/samdemharter/brca-multiomics-tcga
