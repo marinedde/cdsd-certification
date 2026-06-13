@@ -1,8 +1,0 @@
-BLOC 1 — Construction et alimentation d'une infrastructure de gestion de données
-Projet : Kayak
-
-GitHub : https://github.com/marinedde/cdsd-certification/tree/main/bloc1-infrastructure-donnees
-
-Données :
-- Coordonnées GPS : https://nominatim.openstreetmap.org
-- Météo OpenWeatherMap : https://openweathermap.org/api

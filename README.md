@@ -1,12 +1,12 @@
-# Certification CDSD - Marine Deldicque
+# Certification CDSD — Marine Deldicque
 
 **RNCP35288 · Niveau 6 (BAC+4) · Jedha Bootcamp 2026**
 
-Infirmière libérale reconvertie en data science, ce repository regroupe l'ensemble des projets réalisés pour la certification CDSD. Chaque projet correspond à un bloc de compétences, de la construction d'infrastructure de données jusqu'au déploiement en production, en passant par l'analyse exploratoire, le Machine Learning, le Deep Learning et la direction de projets data.
+Infirmière libérale reconvertie en data science, ce repository regroupe l'ensemble des projets réalisés pour la certification CDSD. Chaque projet correspond à un bloc de compétences — de la construction d'infrastructure de données jusqu'au déploiement en production, en passant par l'analyse exploratoire, le Machine Learning, le Deep Learning et la direction de projets data.
 
 ---
 
-## Bloc 1 Infrastructure de données
+## Bloc 1 — Infrastructure de données
 
 ### Kayak · [`bloc1-kayak/`](bloc1-kayak/)
 
@@ -20,7 +20,7 @@ Le pipeline collecte les coordonnées GPS via l'API Nominatim, les prévisions m
 
 ---
 
-## Bloc 2 Analyse exploratoire
+## Bloc 2 — Analyse exploratoire et inférentielle
 
 ### Speed Dating · [`bloc2-speed-dating/`](bloc2-speed-dating/)
 
@@ -40,7 +40,7 @@ Analyse de données massives issues de la plateforme Steam (jeux vidéo) pour co
 
 ---
 
-## Bloc 3 Machine Learning supervisé et non supervisé
+## Bloc 3 — Machine Learning supervisé et non supervisé
 
 ### Walmart Sales · [`bloc3-walmart/`](bloc3-walmart/)
 
@@ -68,7 +68,7 @@ Système de recommandation de produits basé sur les descriptions textuelles du 
 
 ---
 
-## Bloc 4 Deep Learning
+## Bloc 4 — Deep Learning
 
 ### AT&T Spam Detector · [`bloc4-spam-detector/`](bloc4-spam-detector/)
 
@@ -80,7 +80,7 @@ Détection automatique de SMS spam par réseaux de neurones profonds. Le projet 
 
 ---
 
-## Bloc 5 Industrialisation et déploiement
+## Bloc 5 — Industrialisation et déploiement
 
 ### Getaround · [`bloc5-getaround/`](bloc5-getaround/)
 
@@ -102,7 +102,7 @@ L'**API FastAPI** prédit le prix journalier optimal pour une voiture donnée. L
 
 ---
 
-## Bloc 6 Direction de projet data
+## Bloc 6 — Direction de projet data
 
 ### OncoPrint · [`bloc6-oncoprint/`](bloc6-oncoprint/)
 
@@ -124,7 +124,7 @@ Projet final de certification. Application de data science appliquée à l'oncol
 ```
 cdsd-certification/
 ├── README.md
-├── bloc1-Infrastructure de données/
+├── bloc1-kayak/
 │   └── kayak_data_pipeline.ipynb
 ├── bloc2-eda/
 │   ├── speed-dating/
@@ -151,6 +151,6 @@ cdsd-certification/
 ## Auteure
 
 **Marine Deldicque**
-Infirmière libérale · Data Scientist · Nouvelle-Calédonie
+Infirmière libérale (IDEL) · Data Scientist · Nouvelle-Calédonie
 Jedha Bootcamp — Certification CDSD 2026
 [GitHub](https://github.com/marinedde)

@@ -9,3 +9,8 @@ pptx ancien/
 
 # Archives en doublon
 *.zip
+
+# Fichiers personnels (non publiés sur GitHub)
+Marine_Deldicque_CDSD_liens/
+REVISION_CDSD_Marine.md
+VIDEO_DEMOS_CDSD.md
