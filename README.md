@@ -72,7 +72,7 @@ Système de recommandation de produits basé sur les descriptions textuelles du 
 
 ### AT&T Spam Detector · [`bloc4-deep-learning/`](bloc4-deep-learning/)
 
-Détection automatique de SMS spam par réseaux de neurones profonds. Le projet couvre le prétraitement NLP (déduplication, tokenisation ajustée sur le train, padding), la construction d'un réseau de neurones avec couche d'embedding entraînable (baseline), et sa comparaison à données égales avec un modèle de transfer learning fine-tuné (DistilBERT via HuggingFace Transformers). Découpage stratifié train / validation / test ; évaluation par précision, rappel et F1 de la classe spam sur un jeu de test déséquilibré (F1 spam : 0,922 → 0,969), choix du seuil de décision sur la validation et analyse des erreurs.
+Détection automatique de SMS spam par réseaux de neurones profonds. Le projet couvre le prétraitement NLP (déduplication, tokenisation ajustée sur le train, padding), la construction d'un réseau de neurones avec couche d'embedding entraînable (baseline), et sa comparaison à données égales avec un modèle de transfer learning fine-tuné (DistilBERT via HuggingFace Transformers). Découpage stratifié train / validation / test ; évaluation par précision, rappel et F1 de la classe spam sur un jeu de test déséquilibré (F1 spam de 0,922 à 0,969), choix du seuil de décision sur la validation et analyse des erreurs.
 
 **Stack** : Python · TensorFlow / Keras · HuggingFace Transformers · NumPy · Scikit-Learn
 

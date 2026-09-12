@@ -1,12 +1,12 @@
-# AT&T Spam Detector — Bloc 4 · Deep Learning sur données non structurées
+# AT&T Spam Detector (Bloc 4 · Deep Learning sur données non structurées)
 
 Détection automatique de SMS frauduleux (spam) à partir du **texte seul**, par deux approches de
 deep learning comparées à données strictement égales :
 
-| | Modèle 1 — réseau simple (baseline) | Modèle 2 — DistilBERT (transfer learning) |
+| | Modèle 1 : réseau simple (baseline) | Modèle 2 : DistilBERT (transfer learning) |
 |---|---|---|
 | Représentation du texte | Embedding appris de zéro (10 000 mots × 32 dims) | Embeddings contextuels pré-entraînés (Transformer) |
-| Architecture | Embedding → moyenne des mots → Dense 64 ReLU → Dropout → sigmoïde | DistilBERT + tête de classification (2 logits) |
+| Architecture | Embedding, moyenne des mots, Dense 64 ReLU, Dropout, sigmoïde | DistilBERT + tête de classification (2 logits) |
 | Fonction de coût | Entropie croisée binaire, classe spam pondérée ×6,9 | Entropie croisée |
 | Paramètres / entraînement | 0,32 M · ~2 s sur CPU | 67 M · ~3 min sur Apple Silicon (~1 min sur GPU T4) |
 
@@ -29,12 +29,12 @@ Sous contrainte de précision ≥ 98 % (seuil réglé sur la validation), le ré
 ## Méthodologie
 
 - **Données** : [SMS Spam Collection (UCI)](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection),
-  5 572 SMS étiquetés ham / spam. **403 doublons retirés** avant le découpage (sinon fuite train → test).
+  5 572 SMS étiquetés ham / spam. **403 doublons retirés** avant le découpage (sinon fuite du train vers le test).
 - **Découpage stratifié** train 3 721 / validation 414 / test 1 034. La validation sert à l'early
   stopping, au choix de l'epoch et au réglage du seuil ; le test n'est utilisé qu'une fois, à la fin.
 - **Métrique de référence** : F1 de la classe spam (classes déséquilibrées 87 / 13).
-- **Pipeline NLP (modèle 1)** : nettoyage → tokenisation (vocabulaire ajusté sur le train uniquement)
-  → padding à 64 jetons. **DistilBERT** reçoit le texte brut : son tokenizer WordPiece exploite
+- **Pipeline NLP (modèle 1)** : nettoyage, tokenisation (vocabulaire ajusté sur le train uniquement),
+  padding à 64 jetons. **DistilBERT** reçoit le texte brut : son tokenizer WordPiece exploite
   chiffres et ponctuation, qui sont des signaux de spam.
 - **Analyses complémentaires** : mots caractéristiques de chaque classe, plus proches voisins et
   projection PCA des embeddings appris, courbes précision / rappel, choix du seuil, analyse des erreurs.
